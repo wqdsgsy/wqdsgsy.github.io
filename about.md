@@ -9,4 +9,5 @@ permalink: /about/
 $
 \alpha
 $
+123
 Another minimal style of Jekyll theme for writers.
