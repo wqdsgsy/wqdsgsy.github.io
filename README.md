@@ -1,113 +1,189 @@
-[中文](https://wowchemy.com/zh/)
+# Hamilton <!-- omit in toc -->
 
-<p align="center"><a href="https://wowchemy.com/hugo-themes/" target="_blank" rel="noopener"><img src="https://wowchemy.com/media/sharing.png" alt="Wowchemy Website Builder"></a></p>
+A minimal and beautiful Jekyll theme best for writing and note-taking.
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://wowchemy.com/hugo-themes/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)
-[![GitHub Sponsors](https://img.shields.io/github/sponsors/gcushen?label=%E2%9D%A4%EF%B8%8F%20sponsor&style=for-the-badge)](https://github.com/sponsors/gcushen)
-[![Twitter Follow](https://img.shields.io/twitter/follow/wowchemy?label=Follow%20on%20Twitter&style=for-the-badge)](https://twitter.com/wowchemy)
-[![GitHub followers](https://img.shields.io/github/followers/gcushen?label=Follow%20on%20GH&style=for-the-badge)](https://github.com/gcushen)
+The original purpose of this theme is to be a replacement of the default Jekyll theme -- [Minima](https://github.com/jekyll/minima). Hamilton is an enhancement of Minima but still, keep in minimal.
 
-# [Wowchemy](https://wowchemy.com): the website builder for [Hugo](https://gohugo.io)
+Please check out the [demo](https://ngzhio.github.io/jekyll-theme-hamilton/).
 
-### Join 750,000+ Sites. No Code. Easily Create Future-Proof Websites ✏️ 📰 🚀
+| Skins | Displays |
+| ----- | -------- |
+| Daylight | ![screenshot](screenshot.png) |
+| Sunrise/Sunset | ![screenshot](screenshot-sunrise.png) |
+| Midnight | ![screenshot](screenshot-midnight.png) |
 
-🔥 **1. Create _any_ kind of website for free with widgets** - from landing pages, knowledge bases, and courses to professional resumés, conferences, and tech blogs
+## Features <!-- omit in toc -->
 
-🎨 **2. Personalize** a beautiful starter template with **50+ light/dark color themes, language packs, and widgets**
+- [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag)
+- [Jekyll Feed](https://github.com/jekyll/jekyll-feed)
+- [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
+- [Google Analytics](https://analytics.google.com/)
+- [MathJax](https://www.mathjax.org/)
+- [Disqus](https://disqus.com/)
+- [Font Awesome](https://fontawesome.com/)
+- TOC
+- Customizable head
+- Configurable page navigation
+- Customizable styles and skins
+- Archive pages implemented in pure Liquid
 
-🛋 **3. Write from your sofa or on the go with the integrated open source Content Management System (CMS) based on [Netlify CMS](https://wowchemy.com/docs/getting-started/hugo-cms/)**
+## Table of Contents <!-- omit in toc -->
 
-<p style="text-align: center"><a href="https://wowchemy.com/hugo-themes/" target="_blank" rel="noopener"><img src="./.github/media/write-from-phone.gif" alt="Wowchemy CMS"></a></p>
+- [Installation](#installation)
+- [Configuration](#configuration)
+  - [Optional Parameters](#optional-parameters)
+- [Archive Pages](#archive-pages)
+- [MathJax](#mathjax)
+- [TOC](#toc)
+- [Customization](#customization)
+  - [Metadata](#metadata)
+  - [Navigation](#navigation)
+  - [Social Media](#social-media)
+  - [Skins](#skins)
+  - [More Customized Styles](#more-customized-styles)
+- [License](#license)
 
-[Check out the latest **demos**](https://wowchemy.com/hugo-themes/) of what you'll get in less than 60 seconds, or [get **inspired**](https://wowchemy.com/creators/) by other creators.
+## Installation
 
-- 👉 [**Get Started**](https://wowchemy.com/hugo-themes/)
-- 📚 [View the **documentation**](https://wowchemy.com/docs/)
-- 🙋‍♀️ **Have a question?**
-  - **Chat with us now on [Discord](https://discord.gg/z8wNYzb)** or explore the [Troubleshooting Guide]() and [Q&A Forum](https://github.com/wowchemy/wowchemy-hugo-themes/discussions)
-  - _Also, check out [Hugo Forum](https://discourse.gohugo.io) for Hugo Qs and [Netlify Forum](https://answers.netlify.com/) for Netlify Qs_
-- 🐦 Share your Wowchemy site with the community on Twitter: [@wowchemy](https://twitter.com/wowchemy) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=%23MadeWithWowchemy&src=typed_query)
-- 🗳 [Take the survey and help us improve #OpenSource](https://forms.gle/NioD9VhUg7PNmdCAA)
-- ⬆️ **Updating?** View the [Update Guide](https://wowchemy.com/docs/hugo-tutorials/update/) and [Release Notes](https://github.com/wowchemy/wowchemy-hugo-themes/releases)
-- 🚀 [Contribute improvements](CONTRIBUTING.md) or [suggest improvements](https://github.com/wowchemy/wowchemy-hugo-themes/issues)
+You can choose one of the following methods to install Hamilton:
 
-## 💙 We ask you, humbly, to support this open source movement
+- Directly specify the `jekyll-theme-hamilton` gem.
 
-Today we ask you to defend the open source independence of the Wowchemy website builder and themes 🐧
+    1. Add `gem 'jekyll-theme-hamilton'` into your `Gemfile`.
+    2. Add the below lines into your `_config.yml`.
 
-We're an **open source and open science movement** that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way 🤦🏻‍♀️
+        ```yml
+        plugins:
+          - jekyll-theme-hamilton
+        ```
 
-### [😍️ Click here to become a GitHub Sponsor, unlocking awesome perks such as _exclusive templates, widgets, and tutorials_](https://github.com/sponsors/gcushen)
+- If your site is hosted on GitHub Pages, you can use [`jekyll-remote-theme`](https://github.com/benbalter/jekyll-remote-theme) to import the master branch of Hamilton.
 
-### Business Sponsors
+    1. Add `gem 'jekyll-remote-theme'` into your `Gemfile`.
+    2. Add the below lines into your `_config.yml`.
 
-<div style="display: grid; column-gap: 50px; grid-template-columns: repeat(3, 1fr);">
-  <div style="display: flex; align-items: center;">
-    <a href="https://www.netlify.com/" target="_blank"><img src=".github/media/sponsors/netlify.svg" alt="" height="40" width="147" style="display: inline-block;"></a>
-  </div>
-  <div>
-    <a href="https://github.com/sponsors/gcushen"><img src=".github/media/sponsors/your-logo-here.png" alt="" style="display: inline-block;"></a>
-  </div>
-</div>
+        ```yml
+        plugins:
+          - jekyll-remote-theme
 
-## Starter Templates
+        remote_theme: ngzhio/jekyll-theme-hamilton
+        ```
 
-Wowchemy is a **no-code** framework for creating _any_ kind of website using **widgets**. Each site is 100% customizable to **make it your own**!
+## Configuration
 
-Choose from one of the starter templates to easily get started:
+After installation, you can run `jekyll serve` to check out your site, but before that, *make sure* the below **required parameters** are configured in your `_config.yml`.
 
-[![Writing technical content](./.github/media/starters.webp)](https://wowchemy.com/hugo-themes/)
+| Parameters | Types | Specifications |
+|:---------- |:----- |:-------------- |
+| `title`    | string | The site title |
+| `disqus`   | string | The Disqus shortname; Unless you don't want to enable the comments system, you must specify this parameter. It is used in the production environment. |
+| `google_analytics` | string | The Google Analytics tracking ID; It is used in the production environment. |
 
-## The Future of Technical Content Writing
+### Optional Parameters
 
-**Write rich, future-proof content** using standardized Markdown along with bundled extensions for math and diagrams. Edit in the open source CMS or via an editor such as the online GitHub Editor, Jupyter Notebook, or RStudio! [Learn more](https://wowchemy.com/docs/content/writing-markdown-latex/)
+| Parameters | Types | Specifications |
+|:---------- |:----- |:-------------- |
+| `author`   | string | The name of the author of the site; It would be showed in the copyright statement. |
+| `avatar`   | string | The avatar of the author of the site. |
+| `email`    | string | The email of the author of the site. |
+| `location` | string | The current living location of the author of the site. |
+| `skin`     | string | The skin name. See more information on the [Customization](#customization) section. |
+| `lang`     | string | The language of the site; The default value is `en`. |
+| `paginate` | int    | The number of posts on each page. |
+| `date_format` | string | The date format; The default value is `%b %-d, %Y`. |
+| `subscribe` | boolean | Show the subsribe feed button. |
 
-[![Writing technical content](https://wowchemy.com/uploads/readmes/writing-technical-content.gif)](https://academic-demo.netlify.app/post/writing-technical-content/)
+## Archive Pages
 
-## Features
+Hamilton implements some archive templates in pure Liquid. For example, if you want to create a category archive page, set the below parameters on that page:
 
-[![Screenshot](./.github/media/academic.png)](https://wowchemy.com/hugo-themes/)
+```yml
+---
+layout: archive-taxonomies
+type: categories
+---
+```
 
-**Key features:**
+Or a tag archive page:
 
-- **Page builder** - Create _anything_ with [**widgets**](https://wowchemy.com/docs/getting-started/page-builder/) and [**elements**](https://wowchemy.com/docs/content/writing-markdown-latex/)
-- **Edit any type of content** - Blog posts, publications, talks, slides, projects, and more!
-- **Create content** in [**Markdown**](https://wowchemy.com/docs/content/writing-markdown-latex/), [**Jupyter**](https://wowchemy.com/docs/import/jupyter/), or [**RStudio**](https://wowchemy.com/docs/getting-started/install-hugo-extended/)
-- **Plugin System** - Fully customizable [**color** and **font themes**](https://wowchemy.com/hugo-themes/)
-- **Display Code and Math** - Code highlighting and [LaTeX math](https://en.wikibooks.org/wiki/LaTeX/Mathematics) supported
-- **Integrations** - [Google Analytics](https://analytics.google.com), [Disqus commenting](https://disqus.com), Maps, Contact Forms, and more!
-- **Beautiful Site** - Simple and refreshing one page design
-- **Industry-Leading SEO** - Help get your website found on search engines and social media
-- **Media Galleries** - Display your images and videos with captions in a customizable gallery
-- **Mobile Friendly** - Look amazing on every screen with a mobile friendly version of your site
-- **Multi-language** - 35+ language packs including English, 中文, and Português
-- **Multi-user** - Each author gets their own profile page
-- **Privacy Pack** - Assists with GDPR
-- **Stand Out** - Bring your site to life with animation, parallax backgrounds, and scroll effects
-- **One-Click Deployment** - No servers. No databases. Only files.
+```yml
+layout: archive-taxonomies
+type: tags
+```
 
-## Themes
+Or archive by years:
 
-Wowchemy comes with **automatic day (light) and night (dark) mode** built-in. Alternatively, click the moon icon in the top right of one of the [Demos](https://wowchemy.com/hugo-themes/) to set your preferred mode!
+```yml
+layout: archive-years
+```
 
-Choose a stunning theme for your site and [customize it](https://wowchemy.com/docs/getting-started/customization/#custom-theme) to your liking:
+## MathJax
 
-[![Themes](./.github/media/themes.png)](https://wowchemy.com/hugo-themes/)
+You can enable MathJax on each post or page, just set `math: true` on that page.
 
-[Browse more templates and themes...](https://wowchemy.com/hugo-themes/)
+## TOC
 
-## Ecosystem
+If you want to show the Table of Contents of a post or page on the left sidebar, just set `toc: true` on that page.
 
-- **[Hugo Academic CLI](https://github.com/wowchemy/hugo-academic-cli/):** Automatically import academic publications from BibTeX
-- **[Awesome Hugo](https://github.com/wowchemy/awesome-hugo):** Scripts to help migrate content to new versions of Hugo
+## Customization
 
-## Join the community
+### Metadata
 
-Feel free to [_star_ the project on Github](https://github.com/wowchemy/wowchemy-hugo-themes), [join the community](https://discord.gg/z8wNYzb) on Discord, and follow [@wowchemy](https://twitter.com/wowchemy) on Twitter to be the first to hear about new features.
+You can create a file `_includes/custom-head.html` in your repository, and add any metadata into that page, e.g. favicons.
+
+### Navigation
+
+You can create a file `_data/navigation.yml` to configure links to some pages. For example,
+
+```yml
+- title: About
+  url: /about/
+- title: Categories
+  url: /categories/
+- title: Tags
+  url: /tags/
+```
+
+The navigation bar also supports dropdown submenus:
+
+```yml
+- title: About
+  url: /about/
+- title: Categories
+  url: /categories/
+- title: Tags
+  url: /tags/
+- title: More
+  sublinks:
+    - title: FAQ
+      url: /faq/
+    - title: Docs
+      url: /docs/
+```
+
+### Social Media
+
+You can create a file `_data/social.yml` to configure links to your social media. For example,
+
+```yml
+- title: Twitter
+  url: https://twitter.com/ngzhio
+  icon: fab fa-twitter
+- title: GitHub
+  url: https://github.com/ngzhio/jekyll-theme-hamilton
+  icon: fab fa-github
+```
+
+### Skins
+
+You can select a skin by setting `skin` in `_config.yml`. The built-in skins include `daylight`, `midnight`, `sunrise`, and `sunset`. If you don't specify any skin, Hamilton would dynamically select one in these built-in skins according to different hours in a day.
+
+You can also customize a new skin, for example, a skin called `solarized`. You need to copy [`_sass/hamilton/skins/daylight.scss`](_sass/hamilton/skins/daylight.scss) into your repository and then rename it to `solarized.scss`, and adjust some colors in that file. Finally, specify `skin: solarized` in `_config.yml`.
+
+### More Customized Styles
+
+If you want to create more CSS styles in your site, creating a file `_sass/hamilton/custom-styles.scss`, and putting your code in there, Hamilton would automatically refer to them.
 
 ## License
 
-Copyright 2016-present [George Cushen](https://georgecushen.com).
-
-The [Wowchemy Hugo Themes](https://github.com/wowchemy/wowchemy-hugo-themes/) repository is released under the [MIT](https://github.com/wowchemy/wowchemy-hugo-themes/blob/main/LICENSE.md) license.
+The theme is available as open source under the terms of the [MIT License](LICENSE.txt).
